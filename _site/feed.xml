@@ -1,20 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-09-29T18:53:56-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raymond Mintz</title><subtitle>Here we go!</subtitle><entry><title type="html">Truth be told</title><link href="http://localhost:4000/programming/career/2019/09/29/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Truth be told" /><published>2019-09-29T17:18:32-07:00</published><updated>2019-09-29T17:18:32-07:00</updated><id>http://localhost:4000/programming/career/2019/09/29/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/programming/career/2019/09/29/welcome-to-jekyll.html">&lt;p&gt;How do you know when you love what you do? For me, if i was not paid to write cool scripts and programs, I would be doing this anyway.&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.0.0">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-10-06T21:53:58-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Raymond Mintz</title><subtitle>Here we go!</subtitle><entry><title type="html">Bash has a ternary</title><link href="http://localhost:4000/2019/10/06/bash-has-ternary-operator.html" rel="alternate" type="text/html" title="Bash has a ternary" /><published>2019-10-06T00:00:00-07:00</published><updated>2019-10-06T00:00:00-07:00</updated><id>http://localhost:4000/2019/10/06/bash-has-ternary-operator</id><content type="html" xml:base="http://localhost:4000/2019/10/06/bash-has-ternary-operator.html">&lt;h1 id=&quot;bash-parameter-expansion&quot;&gt;Bash Parameter Expansion&lt;/h1&gt;
+&lt;ul&gt;
+  &lt;li&gt;so today I learned there is a ternary like thing for bash.&lt;/li&gt;
+&lt;/ul&gt;
 
-&lt;p&gt;I enjoy being able to automate tedious and boring things.&lt;/p&gt;
+&lt;p&gt;Old way of doing it.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bat &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /tmp/stuff.sh
+&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;I love the challenge of writing efficient yet simple code.&lt;/p&gt;
+&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;[&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;then
+    &lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;One for &lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;$1&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, one for me.&quot;&lt;/span&gt;
+    &lt;span class=&quot;nb&quot;&gt;exit &lt;/span&gt;0
+&lt;span class=&quot;k&quot;&gt;fi
 
-&lt;p&gt;I dislike knowing that there is always gonna be someone lightyears better than me at the same thing.&lt;/p&gt;
+&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;One for you, one for me.&quot;&lt;/span&gt;
 
-&lt;p&gt;I dislike the fact that no matter how much you study and apply yourself, there is still more to learn.&lt;/p&gt;
 
-&lt;p&gt;I currently write code mostly in Python, Golang, Bash. I plan to write code for the rest of my life, whether Im paid to do it or not :)&lt;/p&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/tmp/stuff.sh 
+One &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;you, one &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;me.
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/tmp/stuff.sh coolguy
+One &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;coolguy, one &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;me.
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;This is my first really simple little post.
-I hope to post more interesting things here as I journey through writing more code in a production environment.&lt;/p&gt;
+&lt;p&gt;Cooler approach.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;bat &lt;span class=&quot;nt&quot;&gt;-p&lt;/span&gt; /tmp/stuff.sh
+&lt;span class=&quot;c&quot;&gt;#!/bin/bash&lt;/span&gt;
 
-&lt;p&gt;orevwa!&lt;/p&gt;
+&lt;span class=&quot;nb&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;One for &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;${&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;:-&lt;/span&gt;&lt;span class=&quot;nv&quot;&gt;you&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;, one for me.&quot;&lt;/span&gt;
 
-&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-python&quot; data-lang=&quot;python&quot;&gt;&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;write_code&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
-
-&lt;p&gt;Check out my webpage for some of my favorite side projects &lt;a href=&quot;http://mintz5.com/&quot;&gt;mintz5.com&lt;/a&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">How do you know when you love what you do? For me, if i was not paid to write cool scripts and programs, I would be doing this anyway.</summary></entry></feed>
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/tmp/stuff.sh coolguy
+One &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;coolguy, one &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;me.
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;/tmp/stuff.sh
+One &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;you, one &lt;span class=&quot;k&quot;&gt;for &lt;/span&gt;me.
+ᚱ@two-fer &lt;span class=&quot;nv&quot;&gt;$ &lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;ul&gt;
+  &lt;li&gt;The above example basically checks to see if the variable is set, if not, the default value will be used.&lt;/li&gt;
+&lt;/ul&gt;</content><author><name></name></author><category term="bash" /><category term="coding" /><category term="til" /><summary type="html">Bash Parameter Expansion so today I learned there is a ternary like thing for bash.</summary></entry></feed>

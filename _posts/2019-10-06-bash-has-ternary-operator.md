@@ -1,6 +1,6 @@
 ---
 layout: post
-title: TIL: Bash has a ternary
+title: Bash has a ternary
 catagories: [programming, bash]
 tags: [bash, coding, til]
 ---
@@ -8,8 +8,7 @@ tags: [bash, coding, til]
 # Bash Parameter Expansion
 * so today I learned there is a ternary like thing for bash.
 
-My old way of doing things
-
+Old way of doing it.
 ```bash
 ᚱ@two-fer $ bat -p /tmp/stuff.sh
 #!/bin/bash
@@ -32,7 +31,7 @@ One for coolguy, one for me.
 ᚱ@two-fer $ 
 ```
 
-Applying what I learnt!
+Cooler approach.
 ```bash
 ᚱ@two-fer $ bat -p /tmp/stuff.sh
 #!/bin/bash
