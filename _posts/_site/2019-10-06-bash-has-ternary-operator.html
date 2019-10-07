@@ -1,0 +1,46 @@
+<h1 id="bash-parameter-expansion">Bash Parameter Expansion</h1>
+<ul>
+  <li>so today I learned there is a ternary like thing for bash.</li>
+</ul>
+
+<p>My old way of doing things</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ᚱ@two-fer <span class="nv">$ </span>bat <span class="nt">-p</span> /tmp/stuff.sh
+<span class="c">#!/bin/bash</span>
+
+<span class="k">if</span> <span class="o">[</span> <span class="s2">"</span><span class="nv">$1</span><span class="s2">"</span> <span class="o">]</span>
+<span class="k">then
+    </span><span class="nb">echo</span> <span class="s2">"One for </span><span class="nv">$1</span><span class="s2">, one for me."</span>
+    <span class="nb">exit </span>0
+<span class="k">fi
+
+</span><span class="nb">echo</span> <span class="s2">"One for you, one for me."</span>
+
+
+ᚱ@two-fer <span class="nv">$ </span>
+ᚱ@two-fer <span class="nv">$ </span>/tmp/stuff.sh 
+One <span class="k">for </span>you, one <span class="k">for </span>me.
+ᚱ@two-fer <span class="nv">$ </span>
+ᚱ@two-fer <span class="nv">$ </span>/tmp/stuff.sh coolguy
+One <span class="k">for </span>coolguy, one <span class="k">for </span>me.
+ᚱ@two-fer <span class="nv">$ </span>
+</code></pre></div></div>
+
+<p>Applying what I learnt!</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>ᚱ@two-fer <span class="nv">$ </span>bat <span class="nt">-p</span> /tmp/stuff.sh
+<span class="c">#!/bin/bash</span>
+
+<span class="nb">echo</span> <span class="s2">"One for </span><span class="k">${</span><span class="nv">1</span><span class="k">:-</span><span class="nv">you</span><span class="k">}</span><span class="s2">, one for me."</span>
+
+ᚱ@two-fer <span class="nv">$ </span>
+ᚱ@two-fer <span class="nv">$ </span>/tmp/stuff.sh coolguy
+One <span class="k">for </span>coolguy, one <span class="k">for </span>me.
+ᚱ@two-fer <span class="nv">$ </span>
+ᚱ@two-fer <span class="nv">$ </span>
+ᚱ@two-fer <span class="nv">$ </span>/tmp/stuff.sh
+One <span class="k">for </span>you, one <span class="k">for </span>me.
+ᚱ@two-fer <span class="nv">$ </span>
+</code></pre></div></div>
+<ul>
+  <li>The above example basically checks to see if the variable is set, if not, the default value will be used.</li>
+</ul>
