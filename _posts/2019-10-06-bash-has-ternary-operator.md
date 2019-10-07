@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "TIL: Bash has a ternary""
-tags: bash coding til
+title: TIL: Bash has a ternary
+catagories: [programming, bash]
+tags: [bash, coding, til]
 ---
 
 # Bash Parameter Expansion
