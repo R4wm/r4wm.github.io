@@ -1,0 +1,52 @@
+RAYMOND W. MINTZ
+Engineering Manager, Sovren Technologies (Parler)
+Kokomo, Indiana (remote-friendly)
+raymondmintz11@gmail.com | https://prsmusa.com
+https://www.linkedin.com/in/mintzraymond/ | https://github.com/R4wm
+https://www.parler.com/about/team
+
+----------------------------------------------------------------------
+Customize (optional): Company ___________________  Role ___________________
+----------------------------------------------------------------------
+
+
+Dear Hiring Manager,
+
+I am writing to express interest in an engineering leadership or senior backend
+role on your team. I am an Engineering Manager at Sovren Technologies, working
+on the Parler social platform within the Sovren product ecosystem—my role and
+background are listed on the public team page at https://www.parler.com/about/team.
+Before this I spent roughly a decade in cloud security and edge infrastructure at
+Edgecast (Verizon Digital Media). I design and build from first architecture
+through full implementation, mostly in Python, Go, and Bash on Linux, with deep
+recent work on Go + Laravel services, PostgreSQL, and Redis.
+
+In my current role I lead and contribute hands-on across the PlayTV / social-api
+backend that powers web and mobile clients. Recent work includes cross-application
+SSO and IDP proxy routes, feed and discovery performance, server-side video
+processing with FFmpeg, PostgreSQL scaling (read/write routing, indexing), Redis
+queue hygiene, ads and analytics event flows, and runbooks that help others
+onboard and troubleshoot. I am mission-first and calm under pressure—shaped by
+two combat tours as a U.S. Army sergeant and combat engineer in Kosovo and
+Iraq—and I focus on shipping systems that hold up in the real world.
+
+At Edgecast I developed and operated security application infrastructure at CDN
+scale: automation, distributed deployments, open-source WAF contributions
+(waflz), and the incident debugging that spans application code and deployment
+config. Colleagues know me for thorough troubleshooting and for documenting what
+we learned so the next person is not starting from zero.
+
+Outside of work I design, build, and operate my own full-stack environment at
+prsmusa.com—multiple Docker Compose applications (APIs, OpenSearch, Redis,
+Postgres/MariaDB, observability with Grafana and VictoriaMetrics) exposed
+through nginx and reverse SSH tunnels, with backups and runbooks in public
+infra documentation. That reflects how I like to work: practical automation,
+clear boundaries, and services that recover cleanly.
+
+I would welcome a conversation about how my experience leading backend teams,
+building social-platform services, and operating Docker/Linux stacks could help
+your organization. Thank you for your time and consideration.
+
+Sincerely,
+
+Raymond W. Mintz

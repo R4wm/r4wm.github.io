@@ -1,0 +1,138 @@
+RAYMOND W. MINTZ
+Engineering Manager, Sovren Technologies (Parler social platform)
+Kokomo, Indiana (remote-friendly)
+
+Email:       raymondmintz11@gmail.com
+Website:     https://prsmusa.com
+LinkedIn:    https://www.linkedin.com/in/mintzraymond/
+GitHub:      https://github.com/R4wm
+Team page:   https://www.parler.com/about/team
+
+
+SUMMARY
+-------
+Engineering manager and backend engineer with 15+ years designing systems from
+architecture through production—Python, Go, and Bash on Linux, plus Go + Laravel
+on Parler's social stack (PostgreSQL, Redis). Currently at Sovren Technologies
+on the Parler / PlayTV platform (public team listing at parler.com/about/team).
+Previously owned cloud-security tooling and edge-scale systems at Edgecast /
+Verizon Digital Media. U.S. Army veteran (combat tours in Kosovo and Iraq).
+Comfortable owning application code, data performance, media pipelines, SSO, and
+day-to-day Linux and Docker operations (compose-based stacks, not datacenter
+orchestration).
+
+
+SKILLS
+------
+Languages & frameworks:  Go, Python, Bash, PHP (Laravel), C++ (maintenance and tooling)
+Data & caching:        PostgreSQL (migrations, indexing, read/write routing via PgDog/PgCat),
+                       Redis (queues, scan-safe cache ops), OpenSearch (Elasticsearch-compatible search)
+Media & APIs:          FFmpeg video processing, REST/JSON APIs, proxy routes, session and analytics event pipelines
+Platform:              Linux, Docker / Docker Compose, nginx, Salt, observability (Grafana, VictoriaMetrics, Sentry),
+                       runbooks and backups
+Security background:   WAF/modsecurity ecosystem, load and abuse testing, hardening multi-tenant services
+
+
+EXPERIENCE
+----------
+
+Sovren Technologies — Engineering Manager (Parler / PlayTV · social-api)
+2025 – Present | Remote
+Team profile: https://www.parler.com/about/team
+
+Engineering manager on the Parler social platform within the Sovren product
+ecosystem. Hands-on leader on the Go + Laravel backend shared by web and mobile
+clients—architecture through implementation, including 250+ commits on the
+monorepo, production fixes, and platform documentation.
+
+  • Built and merged Play ↔ Pay SSO: IDP proxy routes in Go and Laravel, token
+    exchange, and cross-app login wiring for Parler properties.
+  • Improved feeds and discovery (query simplification, banned/deleted account
+    contracts, performance-oriented SQL).
+  • Delivered server-side video trimming with FFmpeg (stream copy, S3 key edge
+    cases, validation and test coverage).
+  • Led PostgreSQL scale work: read/write separation, PgCat to PgDog migration,
+    trigram indexes for search-like queries, Laravel test/connection compatibility.
+  • Shipped ads click tracking, self-block safeguards, linked-accounts API proxy,
+    and session-end event streaming for analytics.
+  • Authored event pipeline and local-dev runbooks (analytics validation,
+    deployment troubleshooting, onboarding docs).
+  • Maintained production hygiene: Redis SCAN vs KEYS, queue worker layout,
+    scheduled job/Sentry naming, environment config for staged rollouts.
+
+
+Edgecast — Software engineer, cloud security
+~2016 – 2025 | Los Angeles area / remote
+
+Security and edge-delivery organization (Verizon Digital Media Services). Built
+and operated infrastructure for security products used at CDN scale.
+
+  • Developed and operated security application infrastructure (APIs, automation,
+    distributed deployments) in Python, Go, and Bash on Linux.
+  • Contributed to open-source WAF work (waflz) and related edge-security tooling.
+    https://github.com/VerizonDigital/waflz
+  • Supported Salt, load testing, and incident-style troubleshooting for globally
+    distributed services.
+  • Known internally for deep debugging, documentation, and pairing across QA and
+    application teams.
+
+
+PRSMUSA — Personal platform & products (https://prsmusa.com)
+Ongoing | Owner, full-stack engineer
+
+Self-hosted product lab and public-facing services documented in infra-docs
+(https://github.com/R4wm/infra-docs). Full stack runs in Docker Compose on a home
+backend (baser4wm); a small VPS terminates TLS with nginx and reverse-proxies
+outbound reverse-SSH tunnels so nothing on the home network needs inbound ports.
+NAS + Restic handle off-site backups; Grafana/VictoriaMetrics watch container and
+host health.
+
+Applications (each with its own compose stack):
+
+  • Bible API — reader/API backend with Redis and OpenSearch (Elasticsearch-compatible
+    search + dashboards); public routes under /bible/
+    https://github.com/R4wm/bible_api
+  • Auto Specs — engine build specification tool (FastAPI + Vite frontend, PostgreSQL);
+    API and UI published under /auto_specs/
+    https://github.com/R4wm/auto_specs
+  • PRSM Support — production osTicket helpdesk (MariaDB, isolated restore/testing);
+    /ticket/ with scripted backup/restore runbooks
+    https://github.com/R4wm/osTicket
+  • PRSM Work (Kaneo) — self-hosted project/work management (PostgreSQL, Silo storage);
+    deployed from versioned compose in infra-docs with verified backup jobs
+  • Haul marketplace API — MVP broker API (product monorepo), exposed at
+    https://prsmusa.com/haul/v1/
+  • Metrics platform — Grafana, VictoriaMetrics, Alloy, OpenTelemetry collector,
+    vmalert/Alertmanager; Docker label-based scraping; dashboard at /metrics/
+    https://github.com/R4wm/metrics
+  • PrivateBin — zero-knowledge paste bin at /paste/
+  • baser4wm-ollama — local Ollama + Qwen JSON agent on the same host (GPU-backed
+    experimentation, not public)
+    https://github.com/R4wm/baser4wm-ollama
+
+Ops & tooling: inventory diagrams, bootstrap/runbooks, SOPS-style secrets boundaries,
+tunnel systemd/cron launchers (baser4wm-tunnel), and nginx configs versioned beside
+the docs. https://github.com/R4wm/baser4wm-tunnel
+
+
+U.S. Army — Sergeant / combat engineer
+Two combat tours (Kosovo, Iraq) | California Army National Guard (OIF-8 & OEF)
+
+  • Served as Sergeant and combat engineer (see Sovren team bio at
+    https://www.parler.com/about/team).
+
+
+EDUCATION
+---------
+Westwood College–Anaheim — Bachelor of Science, Computer Network Management
+2010 – 2014
+
+  • Cum Laude; Alpha Beta Kappa National Honor Society
+  • Competed in Western Regional Collegiate Cyber Defense Competition (WRCCDC) blue team
+
+
+CERTIFICATIONS, HONORS & SPEAKING
+---------------------------------
+  • CCNA — Cisco (issued 2012)
+  • SoCal Code Camp speaker (2016) — regional load testing with beeswithmachineguns and Hurl
+  • WRCCDC blue team member (2012)

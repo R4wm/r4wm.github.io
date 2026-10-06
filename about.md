@@ -4,13 +4,13 @@ title: Resume
 permalink: /about/
 ---
 
-**Raymond Mintz**  
-Backend / platform engineer · Kokomo, Indiana (remote-friendly)  
-[raymondmintz11@gmail.com](mailto:raymondmintz11@gmail.com) · [prsmusa.com](https://prsmusa.com) · [LinkedIn](https://www.linkedin.com/in/mintzraymond/) · [GitHub](https://github.com/R4wm)
+**Raymond W. Mintz**  
+**Engineering Manager**, [Sovren Technologies](https://www.parler.com/about/team) (Parler social platform) · Kokomo, Indiana (remote-friendly)  
+[raymondmintz11@gmail.com](mailto:raymondmintz11@gmail.com) · [prsmusa.com](https://prsmusa.com) · [LinkedIn](https://www.linkedin.com/in/mintzraymond/) · [GitHub](https://github.com/R4wm) · [Team profile](https://www.parler.com/about/team)
 
 ## Summary
 
-Backend engineer with 10+ years building production APIs, security platforms, and distributed infrastructure. Currently shipping features on [Parler](https://parler.com/)’s social stack (Go + Laravel, PostgreSQL, Redis). Previously owned cloud-security tooling and edge-scale systems at Edgecast / Verizon Digital Media. Comfortable owning application code, data performance, media pipelines, SSO, and day-to-day Linux + **Docker** operations (compose-based stacks, not datacenter orchestration).
+Engineering manager and backend engineer with 15+ years designing systems from architecture through production—Python, Go, and Bash on Linux, plus Go + Laravel on [Parler](https://parler.com/)’s social stack (PostgreSQL, Redis). Currently at **Sovren Technologies** on the Parler / PlayTV platform ([listed on the public team page](https://www.parler.com/about/team)). Previously owned cloud-security tooling and edge-scale systems at Edgecast / Verizon Digital Media. U.S. Army veteran (combat tours in Kosovo and Iraq). Comfortable owning application code, data performance, media pipelines, SSO, and day-to-day Linux + **Docker** operations (compose-based stacks, not datacenter orchestration).
 
 ## Skills
 
@@ -22,11 +22,11 @@ Backend engineer with 10+ years building production APIs, security platforms, an
 
 ## Experience
 
-### Parler Technologies — Backend engineer (PlayTV / `social-api`)
+### Sovren Technologies — Engineering Manager (Parler / PlayTV · `social-api`)
 
-*2025 – Present · Remote*
+*2025 – Present · Remote* · [Parler team](https://www.parler.com/about/team)
 
-Social platform backend shared by web and mobile clients. Primary contributor on the Go + Laravel monorepo (250+ commits), from feature work through production fixes and platform documentation.
+Engineering manager on the Parler social platform within the Sovren product ecosystem. Hands-on leader on the Go + Laravel backend shared by web and mobile clients—architecture through implementation, including 250+ commits on the monorepo, production fixes, and platform documentation.
 
 - Built and merged **Play ↔ Pay SSO**: IDP proxy routes in Go and Laravel, token exchange, and cross-app login wiring for Parler properties.
 - Improved **feeds and discovery** (query simplification, banned/deleted account contracts, performance-oriented SQL).
@@ -66,11 +66,11 @@ Self-hosted product lab and public-facing services documented in [infra-docs](ht
 
 **Ops & tooling:** inventory diagrams, bootstrap/runbooks, SOPS-style secrets boundaries, tunnel systemd/cron launchers ([baser4wm-tunnel](https://github.com/R4wm/baser4wm-tunnel)), and nginx configs versioned beside the docs.
 
-### California Army National Guard — Sergeant
+### U.S. Army — Sergeant / combat engineer
 
-*Combat veteran (OIF-8 & OEF)*
+*Two combat tours (Kosovo, Iraq)* · California Army National Guard (OIF-8 & OEF)
 
-- Served as **Sergeant** in the California Army National Guard with overseas deployments (Operation Iraqi Freedom 8, Operation Enduring Freedom).
+- Served as **Sergeant** and combat engineer; deployments include Kosovo and Iraq (see [Sovren team bio](https://www.parler.com/about/team)).
 
 ## Education
 
