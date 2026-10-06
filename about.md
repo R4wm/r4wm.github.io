@@ -4,12 +4,13 @@ title: About
 permalink: /about/
 ---
 
-Computer Programmer
+Software engineer focused on APIs, automation, and distributed systems on Kubernetes and Linux.
 
 ## Profile
 ---
-- Proud Husband and Father
-- Residing in [Los Angeles California, USA](https://www.google.com/maps/d/u/0/viewer?msa=0&ll=33.977157000000005%2C-118.44570599999997&spn=0.781734%2C1.304626&mid=19RyxOhbvnf8OQZyUVujZDJEwbJE&z=10)
-- Software Engineer at [Verizon Digital Media Services](https://www.verizondigitalmedia.com/) for Cloud Security
-- US Combat Veteran (OIF-8 & OEF) for the California Army National Guard, Sergeant
-- Bachelor of Science in Computer Network Management at Westwood College
+- Based in [Kokomo, Indiana, USA](https://www.google.com/maps/place/Kokomo,+IN)
+- Software engineer at [Edgecast](https://www.linkedin.com/company/edgecast/)
+- Python, Go, and Bash; Kubernetes, Salt, and cloud security infrastructure
+- US combat veteran (OIF-8 & OEF), California Army National Guard, Sergeant
+- Bachelor of Science in Computer Network Management, [Westwood College–Anaheim](https://www.linkedin.com/school/westwood-college-anaheim/)
+- [LinkedIn](https://www.linkedin.com/in/mintzraymond/)
