@@ -59,7 +59,7 @@ Self-hosted product lab and public-facing services documented in [infra-docs](ht
 - **[Auto Specs](https://github.com/R4wm/auto_specs)** — engine build specification tool (**FastAPI** + **Vite** frontend, **PostgreSQL**); API and UI published under `/auto_specs/`.
 - **[PRSM Support](https://github.com/R4wm/osTicket)** — production **osTicket** helpdesk (**MariaDB**, isolated restore/testing); `/ticket/` with scripted backup/restore runbooks.
 - **PRSM Work (Kaneo)** — self-hosted project/work management (**PostgreSQL**, Silo storage); deployed from versioned compose in infra-docs with verified backup jobs.
-- **Haul marketplace API** — MVP broker API in the [prsm](https://github.com/R4wm/prsm) monorepo, exposed at `/haul/v1/`.
+- **Haul marketplace API** — MVP broker API (product monorepo), exposed at [`/haul/v1/`](https://prsmusa.com/haul/v1/).
 - **[Metrics platform](https://github.com/R4wm/metrics)** — **Grafana**, **VictoriaMetrics**, **Alloy**, OpenTelemetry collector, vmalert/Alertmanager; Docker label-based scraping; dashboard at `/metrics/`.
 - **PrivateBin** — zero-knowledge paste bin at `/paste/`.
 - **[baser4wm-ollama](https://github.com/R4wm/baser4wm-ollama)** — local **Ollama + Qwen** JSON agent on the same host (GPU-backed experimentation, not public).
