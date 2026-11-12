@@ -73,13 +73,15 @@ li { padding-left:2px; margin:0 0 6px; font-size:14px; line-height:1.65; }
   .job { margin-top:11pt; }
   h3 { font-size:11pt; }
   .dates { font-size:9pt; }
-  li { font-size:9.5pt; line-height:1.4; margin-bottom:2.5pt; }
+  li { font-size:9.2pt; line-height:1.38; margin-bottom:2.5pt; }
   a { color:inherit; text-decoration:none; }
   h2,h3,.job-top,.company { break-after:avoid; }
   li { break-inside:avoid; }
   .prior-experience { break-before:page; margin-top:0; }
   .review { font-size:8pt; margin-top:13pt; padding-top:7pt; }
 }
+.group { list-style:none; margin:12px 0 4px -20px; font-weight:650; font-size:13.5px; color:var(--accent); }
+@media print { .group { margin:7pt 0 2pt -20px; font-size:9.5pt; } main, body { margin-bottom:0 !important; padding-bottom:0 !important; } main > section:last-child { margin-bottom:0; } }
 </style>
 </head>
 <body>
@@ -100,51 +102,50 @@ li { padding-left:2px; margin:0 0 6px; font-size:14px; line-height:1.65; }
     </header>
     <section aria-labelledby="summary-heading">
       <h2 id="summary-heading">Summary</h2>
-      <p class="summary">Software engineer who builds and runs production systems end to end: Go and Python services, PostgreSQL, billing and authentication, and the infrastructure underneath them. Owner of PRISM USA LLC. U.S. Army combat veteran.</p>
+      <p class="summary">Software engineer who builds and runs production systems end to end: Go, Rust and Python services, PostgreSQL, billing and authentication, and cloud networking down to the kernel driver. Owner of PRISM USA LLC. U.S. Army combat veteran.</p>
     </section>
     <section aria-labelledby="skills-heading">
       <h2 id="skills-heading">Technical skills</h2>
-      <dl class="skills"><dt>Languages</dt><dd>Go, Python, SQL, TypeScript, JavaScript, Lua, Bash</dd><dt>Backend</dt><dd>REST APIs, Stripe, JWT/JWKS, OAuth/OIDC, background processing, webhooks</dd><dt>Data</dt><dd>PostgreSQL, Redis, Kafka, Elasticsearch/OpenSearch, ClickHouse, MariaDB</dd><dt>Infrastructure</dt><dd>Docker, Kubernetes, nginx, Cloudflare, Linux, Terraform, Salt, GitHub Actions, Control Plane, Triton</dd><dt>Observability</dt><dd>Prometheus, Grafana, VictoriaMetrics, Sentry</dd><dt>Frontend</dt><dd>React, React Native, Vue</dd><dt>AI development</dt><dd>Claude, Codex, Cursor, ChatGPT; LLM, speech-to-text, and text-to-speech APIs</dd></dl>
+      <dl class="skills"><dt>Languages</dt><dd>Go, Rust, Python, SQL, TypeScript, JavaScript, Lua, Bash</dd><dt>Backend</dt><dd>REST APIs, Stripe, JWT/JWKS, OAuth/OIDC, background processing, webhooks</dd><dt>Data</dt><dd>PostgreSQL, Redis, Kafka, Elasticsearch/OpenSearch, ClickHouse, MariaDB</dd><dt>Infrastructure</dt><dd>Docker, Kubernetes, nginx, Cloudflare, Linux, Terraform, Salt, GitHub Actions, Control Plane, Triton, SmartOS/illumos, bhyve</dd><dt>Observability</dt><dd>Prometheus, Grafana, VictoriaMetrics, Sentry</dd><dt>Frontend</dt><dd>React, React Native, Vue</dd><dt>AI development</dt><dd>Claude, Codex, Cursor, ChatGPT; LLM, speech-to-text, and text-to-speech APIs</dd></dl>
     </section>
     <section aria-labelledby="experience-heading">
       <h2 id="experience-heading">Professional experience</h2>
       <article class="job">
       <div class="job-top"><h3>Software Engineer (Contract)</h3><span class="dates">September 2026 - Present</span></div>
-      <p class="company">Sovren Technologies, Inc., through PRISM USA LLC | Parler / PlayTV | Remote / Kokomo, IN</p><div class="job-top" style="margin-top:6px"><h3 style="font-size:15px">Engineering Manager</h3><span class="dates">February 2025 - September 2026</span></div><p class="company">Parler Cloud Technologies LLC</p>
-      <ul><li>Built Go APIs for Stripe Premium subscriptions and creator memberships, including durable checkout state, idempotent payment requests, and webhook recovery.</li><li>Implemented identity-provider token exchange and account linking for Parler and PlayTV, including JWT signature, issuer, and audience validation with JWKS caching.</li><li>Centralized tenant-aware authorization for private accounts across posts, comments, stories, search, and trending.</li><li>Migrated email and SMS workflows from Laravel to Go background workers, with tenant-specific templates and Mailgun/SMTP delivery.</li><li>Reworked a PostgreSQL onboarding migration to avoid updating approximately 15 million account rows while preserving activation behavior.</li><li>Instrumented Go APIs with Prometheus and Sentry to track errors and route latency, distinguishing native Go requests from proxied Laravel traffic.</li><li>Built an audited PostgreSQL command-line tool with read-only credential isolation, transaction controls, query timeouts, and JSON/CSV output.</li><li>Developed shared React and React Native features, including community chat with reconnect recovery and Premium administration tools.</li></ul>
+      <p class="company">Sovren Technologies, Inc., through PRISM USA LLC | Parler / PlayTV | Remote / Kokomo, IN</p><div class="job-top" style="margin-top:6px"><h3 style="font-size:15px">Engineering Manager <span class="company" style="font-weight:400">| Parler Cloud Technologies LLC</span></h3><span class="dates">February 2025 - September 2026</span></div>
+      <ul><li class="group">Parler / PlayTV</li><li>Built Go APIs for Stripe Premium subscriptions and creator memberships, including durable checkout state, idempotent payment requests, and webhook recovery.</li><li>Implemented identity-provider token exchange and account linking for Parler and PlayTV, including JWT signature, issuer, and audience validation with JWKS caching.</li><li>Centralized tenant-aware authorization for private accounts across posts, comments, stories, search, and trending.</li><li>Migrated email and SMS workflows from Laravel to Go background workers, and reworked a PostgreSQL onboarding migration to avoid updating approximately 15 million account rows.</li><li>Instrumented Go APIs with Prometheus and Sentry, built an audited read-only PostgreSQL command-line tool, and developed shared React and React Native features including community chat.</li><li class="group">Triton DataCenter (open-source cloud platform, Rust)</li><li>Designed and shipped direct public IP addresses for load balancers across the stack: a new port type in the Proteus kernel networking driver (inbound-only, anti-spoofing, uplink shared safely with floating IPs) and the Rust control-plane placement, address binding, and rollout safety.</li><li>Qualified the change on hardware: built SmartOS platform images and proved mixed-version compatibility, so hosts can upgrade without a coordinated cutover.</li><li>Built operator address-source selection for NAT gateways and floating IPs (CLI and admin console), deliberate subnet egress with retryable enable/disable, tenant-limit overrides, and audited configuration changes.</li></ul>
     </article>
       <article class="job">
       <div class="job-top"><h3>Owner and Engineer</h3><span class="dates">July 2024 - Present</span></div>
       <p class="company">PRISM USA LLC | Kokomo, IN | <a href="mailto:raymond@prsmusa.com">raymond@prsmusa.com</a> | <a href="https://prsmusa.com">prsmusa.com</a></p>
-      <ul><li>Built and operate an AI phone receptionist for small businesses that screens and qualifies callers, books call-backs, and transfers live calls (Python, SignalWire, cloud speech and LLM services).</li><li>Designed the call path so calls never depend on the database: settings are cached with an on-disk snapshot and call records go through a local outbox, so a database outage cannot drop a call.</li><li>Built the customer dashboard (React, TypeScript, FastAPI, PostgreSQL) with Google sign-in, role-based access, and an audit trail.</li><li>Run the company&#x27;s services: project management (Kaneo), a Go Bible reader API with OpenSearch full-text search, a help desk, a paste service, and Grafana/VictoriaMetrics monitoring with alerting.</li><li>Migrated every service from an on-premises server and VPS reverse-tunnel edge to a cloud platform behind Cloudflare and a load balancer, with nginx as the single front door and private-network backends; verified zero data loss table by table and kept a tested rollback path, a scripted disaster-recovery rebuild, and nightly backups.</li></ul>
+      <ul><li>Built and operate an AI phone receptionist for small businesses that screens and qualifies callers, books call-backs, and transfers live calls (Python, SignalWire, cloud speech and LLM services); calls never depend on the database, using cached settings and a local outbox for call records.</li><li>Built the customer dashboard (React, TypeScript, FastAPI, PostgreSQL) with Google sign-in, role-based access, and an audit trail.</li><li>Run the company&#x27;s services: project management (Kaneo), a Go Bible reader API with OpenSearch full-text search, a help desk, a paste service, and Grafana/VictoriaMetrics monitoring with alerting.</li><li>Migrated every service, as an early Triton Cloud customer, from an on-premises server and VPS reverse-tunnel edge to the cloud behind Cloudflare and a load balancer, with nginx as the single front door and private-network backends; verified zero data loss table by table and kept a tested rollback path, a scripted disaster-recovery rebuild, and nightly backups.</li></ul>
     </article>
       <article class="job">
       <div class="job-top"><h3>Software Engineer</h3><span class="dates">March 2016 - December 2024</span></div>
       <p class="company">Edgecast / Edgio (formerly Verizon Media / Yahoo)</p>
-      <ul><li>Created a distributed Kafka ingestion and enrichment system in Go processing approximately 10 million messages per second.</li><li>Developed customer-facing Go and Python APIs and implemented JWT authentication with an OpenResty/Nginx proxy using Lua.</li><li>Built distributed Elasticsearch and ClickHouse clusters totaling approximately 200 servers to support customer-facing dashboards.</li><li>Improved configuration delivery using Redis for real-time updates and batching to increase throughput.</li><li>Provisioned and managed more than 100 servers with Salt and Kubernetes; implemented monitoring with Prometheus, Grafana, and Slack webhooks.</li></ul>
+      <ul><li>Created a distributed Kafka ingestion and enrichment system in Go processing approximately 10 million messages per second.</li><li>Developed customer-facing Go and Python APIs and implemented JWT authentication with an OpenResty/Nginx proxy using Lua.</li><li>Built distributed Elasticsearch and ClickHouse clusters totaling approximately 200 servers to support customer-facing dashboards.</li><li>Improved configuration delivery with Redis real-time updates and batching; provisioned and managed more than 100 servers with Salt and Kubernetes, monitored with Prometheus and Grafana.</li></ul>
     </article>
       <article class="job">
       <div class="job-top"><h3>Network Operations (NOC) Engineer</h3><span class="dates">April 2015 - March 2016</span></div>
       <p class="company">Verizon Digital Media Services / Edgecast</p>
-      <ul><li>Automated global issue scans and reporting, reducing issue-detection time from one hour to 10 minutes.</li><li>Diagnosed production server and application issues, gathered root-cause evidence, and coordinated escalation to engineering teams.</li></ul>
+      <ul><li>Automated global issue scans and reporting, cutting issue-detection time from one hour to 10 minutes; diagnosed production issues and escalated with root-cause evidence.</li></ul>
     </article>
       <article class="job">
       <div class="job-top"><h3>Software Engineer / Network Engineer</h3><span class="dates">March 2014 - December 2014</span></div>
       <p class="company">STG Logistics</p>
-      <ul><li>Maintained legacy SCO Unix systems and improved network and systems security.</li><li>Built Java reporting applications for weekly customer updates on issues and resolutions.</li></ul>
+      <ul><li>Maintained legacy SCO Unix systems, improved network and systems security, and built Java reporting applications for weekly customer updates.</li></ul>
     </article>
     </section>
     <section aria-labelledby="education-heading">
       <h2 id="education-heading">Education</h2>
       <h3>Westwood College (Anaheim)</h3>
-      <p>Bachelor of Science in Information Technology</p>
-      <p class="detail">Major in Computer Network Management | Cum Laude | Alpha Beta Kappa | May 2014</p>
+      <p>B.S. Information Technology, Computer Network Management <span class="detail">| Cum Laude | Alpha Beta Kappa | May 2014</span></p>
     </section>
     <section aria-labelledby="military-heading">
       <h2 id="military-heading">Military service</h2>
-      <h3>U.S. Army National Guard</h3>
-      <p>Sergeant (E-5), Combat Engineer</p>
-      <p class="detail">Combat veteran; Operation Iraqi Freedom deployment, Kuwait/Iraq, 2008-2009.</p>
+      <h3>U.S. Army National Guard (California)</h3>
+      <p>Sergeant (E-5), Combat Engineer (21B) | Honorable discharge</p>
+      <p class="detail">Deployed to Kosovo (NATO KFOR) and Kuwait/Iraq (Operation Iraqi Freedom, September 2008 - July 2009). Army Commendation Medal, Army Achievement Medal, Iraq Campaign Medal with campaign star, Kosovo Campaign Medal, NATO Medal.</p>
     </section>
   </main>
 </body>

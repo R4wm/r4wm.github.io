@@ -4,16 +4,16 @@ Kokomo, IN | +1 626 513 1204 | raymondmintz11@gmail.com
 https://prsmusa.com | https://r4wm.github.io | https://github.com/R4wm | https://www.linkedin.com/in/mintzraymond
 
 SUMMARY
-Software engineer who builds and runs production systems end to end: Go and Python services,
-PostgreSQL, billing and authentication, and the infrastructure underneath them. Owner of
-PRISM USA LLC. U.S. Army combat veteran.
+Software engineer who builds and runs production systems end to end: Go, Rust and Python
+services, PostgreSQL, billing and authentication, and cloud networking down to the kernel
+driver. Owner of PRISM USA LLC. U.S. Army combat veteran.
 
 TECHNICAL SKILLS
-Languages: Go, Python, SQL, TypeScript, JavaScript, Lua, Bash
+Languages: Go, Rust, Python, SQL, TypeScript, JavaScript, Lua, Bash
 Backend: REST APIs, Stripe, JWT/JWKS, OAuth/OIDC, background processing, webhooks
 Data: PostgreSQL, Redis, Kafka, Elasticsearch/OpenSearch, ClickHouse, MariaDB
 Infrastructure: Docker, Kubernetes, nginx, Cloudflare, Linux, Terraform, Salt, GitHub
-  Actions, Control Plane, Triton
+  Actions, Control Plane, Triton, SmartOS/illumos, bhyve
 Observability: Prometheus, Grafana, VictoriaMetrics, Sentry
 Frontend: React, React Native, Vue
 AI development: Claude, Codex, Cursor, ChatGPT; LLM, speech-to-text, and text-to-speech APIs
@@ -24,41 +24,46 @@ Software Engineer (Contract) | Sovren Technologies, Inc., through PRISM USA LLC
 September 2026 - Present
 Parler / PlayTV | Remote / Kokomo, IN
 Engineering Manager | Parler Cloud Technologies LLC | February 2025 - September 2026
+Parler / PlayTV:
 - Built Go APIs for Stripe Premium subscriptions and creator memberships, including durable
   checkout state, idempotent payment requests, and webhook recovery.
 - Implemented identity-provider token exchange and account linking for Parler and PlayTV,
   including JWT signature, issuer, and audience validation with JWKS caching.
 - Centralized tenant-aware authorization for private accounts across posts, comments,
   stories, search, and trending.
-- Migrated email and SMS workflows from Laravel to Go background workers, with tenant-
-  specific templates and Mailgun/SMTP delivery.
-- Reworked a PostgreSQL onboarding migration to avoid updating approximately 15 million
-  account rows while preserving activation behavior.
-- Instrumented Go APIs with Prometheus and Sentry to track errors and route latency,
-  distinguishing native Go requests from proxied Laravel traffic.
-- Built an audited PostgreSQL command-line tool with read-only credential isolation,
-  transaction controls, query timeouts, and JSON/CSV output.
-- Developed shared React and React Native features, including community chat with reconnect
-  recovery and Premium administration tools.
+- Migrated email and SMS workflows from Laravel to Go background workers, and reworked a
+  PostgreSQL onboarding migration to avoid updating approximately 15 million account rows.
+- Instrumented Go APIs with Prometheus and Sentry, built an audited read-only PostgreSQL
+  command-line tool, and developed shared React and React Native features including
+  community chat.
+Triton DataCenter (open-source cloud platform, Rust):
+- Designed and shipped direct public IP addresses for load balancers across the stack: a new
+  port type in the Proteus kernel networking driver (inbound-only, anti-spoofing, uplink
+  shared safely with floating IPs) and the Rust control-plane placement, address binding,
+  and rollout safety.
+- Qualified the change on hardware: built SmartOS platform images and proved mixed-version
+  compatibility, so hosts can upgrade without a coordinated cutover.
+- Built operator address-source selection for NAT gateways and floating IPs (CLI and admin
+  console), deliberate subnet egress with retryable enable/disable, tenant-limit overrides,
+  and audited configuration changes.
 
 Owner and Engineer | PRISM USA LLC
 July 2024 - Present
 Kokomo, IN | raymond@prsmusa.com | prsmusa.com
 - Built and operate an AI phone receptionist for small businesses that screens and qualifies
   callers, books call-backs, and transfers live calls (Python, SignalWire, cloud speech and
-  LLM services).
-- Designed the call path so calls never depend on the database: settings are cached with an
-  on-disk snapshot and call records go through a local outbox, so a database outage cannot
-  drop a call.
+  LLM services); calls never depend on the database, using cached settings and a local
+  outbox for call records.
 - Built the customer dashboard (React, TypeScript, FastAPI, PostgreSQL) with Google sign-in,
   role-based access, and an audit trail.
 - Run the company's services: project management (Kaneo), a Go Bible reader API with
   OpenSearch full-text search, a help desk, a paste service, and Grafana/VictoriaMetrics
   monitoring with alerting.
-- Migrated every service from an on-premises server and VPS reverse-tunnel edge to a cloud
-  platform behind Cloudflare and a load balancer, with nginx as the single front door and
-  private-network backends; verified zero data loss table by table and kept a tested
-  rollback path, a scripted disaster-recovery rebuild, and nightly backups.
+- Migrated every service, as an early Triton Cloud customer, from an on-premises server and
+  VPS reverse-tunnel edge to the cloud behind Cloudflare and a load balancer, with nginx as
+  the single front door and private-network backends; verified zero data loss table by table
+  and kept a tested rollback path, a scripted disaster-recovery rebuild, and nightly
+  backups.
 
 Software Engineer | Edgecast / Edgio (formerly Verizon Media / Yahoo)
 March 2016 - December 2024
@@ -68,29 +73,28 @@ March 2016 - December 2024
   OpenResty/Nginx proxy using Lua.
 - Built distributed Elasticsearch and ClickHouse clusters totaling approximately 200 servers
   to support customer-facing dashboards.
-- Improved configuration delivery using Redis for real-time updates and batching to increase
-  throughput.
-- Provisioned and managed more than 100 servers with Salt and Kubernetes; implemented
-  monitoring with Prometheus, Grafana, and Slack webhooks.
+- Improved configuration delivery with Redis real-time updates and batching; provisioned and
+  managed more than 100 servers with Salt and Kubernetes, monitored with Prometheus and
+  Grafana.
 
 Network Operations (NOC) Engineer | Verizon Digital Media Services / Edgecast
 April 2015 - March 2016
-- Automated global issue scans and reporting, reducing issue-detection time from one hour to
-  10 minutes.
-- Diagnosed production server and application issues, gathered root-cause evidence, and
-  coordinated escalation to engineering teams.
+- Automated global issue scans and reporting, cutting issue-detection time from one hour to
+  10 minutes; diagnosed production issues and escalated with root-cause evidence.
 
 Software Engineer / Network Engineer | STG Logistics
 March 2014 - December 2014
-- Maintained legacy SCO Unix systems and improved network and systems security.
-- Built Java reporting applications for weekly customer updates on issues and resolutions.
+- Maintained legacy SCO Unix systems, improved network and systems security, and built Java
+  reporting applications for weekly customer updates.
 
 EDUCATION
 Westwood College (Anaheim)
-Bachelor of Science in Information Technology
-Major in Computer Network Management | Cum Laude | Alpha Beta Kappa | May 2014
+B.S. Information Technology, Computer Network Management
+Cum Laude | Alpha Beta Kappa | May 2014
 
 MILITARY SERVICE
-U.S. Army National Guard
-Sergeant (E-5), Combat Engineer
-Combat veteran; Operation Iraqi Freedom deployment, Kuwait/Iraq, 2008-2009.
+U.S. Army National Guard (California)
+Sergeant (E-5), Combat Engineer (21B) | Honorable discharge
+Deployed to Kosovo (NATO KFOR) and Kuwait/Iraq (Operation Iraqi Freedom, September 2008 -
+July 2009). Army Commendation Medal, Army Achievement Medal, Iraq Campaign Medal with
+campaign star, Kosovo Campaign Medal, NATO Medal.

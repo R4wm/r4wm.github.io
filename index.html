@@ -27,7 +27,7 @@
     <section class="hero">
       <p class="eyebrow">Software engineer · Kokomo, Indiana</p>
       <h1>I build and run production systems end to end.</h1>
-      <p class="lede">Go, Python and PostgreSQL services, subscription billing and authentication, and the infrastructure underneath them. Owner of PRISM USA LLC. U.S. Army combat veteran.</p>
+      <p class="lede">Go, Rust and Python services, subscription billing and authentication, and cloud networking all the way down to the kernel driver. Owner of PRISM USA LLC. U.S. Army combat veteran.</p>
       <div class="actions">
         <a class="button primary" href="/resume/">Read my resume</a>
         <a class="button" href="/Raymond_Mintz_Resume.pdf">Download PDF</a>
@@ -41,7 +41,7 @@
         <article class="role">
           <span class="dates">Sep 2026 – present</span>
           <h3>Software Engineer (contract), Sovren Technologies</h3>
-          <p>Backend and app work on the Parler and PlayTV platforms: subscriptions and billing, identity and account linking, authorization, and background workers. Before the contract I was Engineering Manager at Parler Cloud Technologies (Feb 2025 – Sep 2026).</p>
+          <p>Backend work on the Parler and PlayTV platforms (billing, identity, authorization, background workers) and cloud networking on Triton DataCenter, the open-source cloud platform, in Rust. Before the contract I was Engineering Manager at Parler Cloud Technologies (Feb 2025 – Sep 2026).</p>
         </article>
         <article class="role">
           <span class="dates">Jul 2024 – present</span>
@@ -69,6 +69,22 @@
             <h3>Moving every service to the cloud</h3>
             <p>Moved the company's sites and apps from a home server behind VPS tunnels to Triton, behind Cloudflare, a load balancer and nginx, with backends on a private network. Every database was checked table by table and every file store byte by byte: zero data loss, a tested rollback, a scripted disaster-recovery rebuild and nightly backups.</p>
             <div class="tags"><span>nginx</span><span>Docker</span><span>Cloudflare</span><span>Triton</span><span>PostgreSQL</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">Triton DataCenter</span>
+          <div class="what">
+            <h3>Direct public IPs for load balancers</h3>
+            <p>Designed and shipped it across the whole stack: a new port type in the Proteus kernel networking driver that only accepts inbound traffic, blocks spoofing and shares the host's uplink safely with floating IPs, plus the Rust control-plane work for placement, address binding and safe rollout. Qualified on hardware with SmartOS platform builds and proved old and new hosts can run side by side.</p>
+            <div class="tags"><span>Rust</span><span>SmartOS / illumos</span><span>Kernel networking</span><span>bhyve</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">Triton DataCenter</span>
+          <div class="what">
+            <h3>Address sources and outbound access</h3>
+            <p>Operators choose which address pool NAT gateways and floating IPs draw from, in the CLI and admin console; new subnets start with internet access off and turning it on or off is safe to retry. Also tenant-limit overrides and audited configuration changes.</p>
+            <div class="tags"><span>Rust</span><span>React</span><span>Networking</span></div>
           </div>
         </li>
         <li>
@@ -102,13 +118,13 @@
       <p class="eyebrow">Background</p>
       <h2 id="background">Where I've been</h2>
       <dl class="timeline">
-        <dt>2026 – present</dt><dd>Software Engineer (contract), Sovren Technologies, through PRISM USA LLC</dd>
+        <dt>2026 – present</dt><dd>Software Engineer (contract), Sovren Technologies, through PRISM USA LLC: Parler / PlayTV and Triton DataCenter</dd>
         <dt>2025 – 2026</dt><dd>Engineering Manager, Parler Cloud Technologies</dd>
         <dt>2024 – present</dt><dd>Owner and engineer, PRISM USA LLC</dd>
         <dt>2016 – 2024</dt><dd>Software Engineer, Edgecast / Edgio (formerly Verizon Media / Yahoo)</dd>
         <dt>2015 – 2016</dt><dd>Network Operations Engineer, Verizon Digital Media Services / Edgecast</dd>
         <dt>2014</dt><dd>B.S. Information Technology, Westwood College (Anaheim), cum laude</dd>
-        <dt>2008 – 2009</dt><dd>U.S. Army National Guard, Sergeant (E-5), Combat Engineer; Operation Iraqi Freedom</dd>
+        <dt>Army</dt><dd>U.S. Army National Guard (California), Sergeant (E-5), Combat Engineer. Deployed to Kosovo (NATO KFOR) and to Kuwait/Iraq for Operation Iraqi Freedom (Sep 2008 – Jul 2009). Army Commendation Medal, Army Achievement Medal. Honorable discharge.</dd>
         <dt>Speaking</dt><dd>SoCal Code Camp 2016: multi-region load testing with Python and AWS EC2</dd>
       </dl>
     </section>
