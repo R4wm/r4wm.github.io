@@ -21,9 +21,9 @@
 title: Raymond Mintz
 email: raymondmintz11@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-    Resume and profile for Raymond Mintz — backend engineer (Parler, Edgecast), Kokomo IN.
+    Resume and profile for Raymond Mintz — software engineer (Parler Cloud Technologies, PRISM USA LLC), Kokomo IN.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://mintz5.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://r4wm.github.io" # the base hostname & protocol for your site
 # twitter_username: jekyllrb
 github_username:  r4wm
 
