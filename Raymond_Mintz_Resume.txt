@@ -1,138 +1,99 @@
-RAYMOND W. MINTZ
-Engineering Manager, Sovren Technologies (Parler social platform)
-Kokomo, Indiana (remote-friendly)
-
-Email:       raymondmintz11@gmail.com
-Website:     https://prsmusa.com
-LinkedIn:    https://www.linkedin.com/in/mintzraymond/
-GitHub:      https://github.com/R4wm
-Team page:   https://www.parler.com/about/team
-
+RAYMOND MINTZ
+SOFTWARE ENGINEER
+Kokomo, IN | +1 626 513 1204 | raymondmintz11@gmail.com
+https://prsmusa.com | https://r4wm.github.io | https://github.com/R4wm | https://www.linkedin.com/in/mintzraymond
 
 SUMMARY
--------
-Engineering manager and backend engineer with 15+ years designing systems from
-architecture through production—Python, Go, and Bash on Linux, plus Go + Laravel
-on Parler's social stack (PostgreSQL, Redis). Currently at Sovren Technologies
-on the Parler / PlayTV platform (public team listing at parler.com/about/team).
-Previously owned cloud-security tooling and edge-scale systems at Edgecast /
-Verizon Digital Media. U.S. Army veteran (combat tours in Kosovo and Iraq).
-Comfortable owning application code, data performance, media pipelines, SSO, and
-day-to-day Linux and Docker operations (compose-based stacks, not datacenter
-orchestration).
+Software engineer who builds and runs production systems end to end: Go and Python services,
+PostgreSQL data models, subscription billing and authentication, and the infrastructure
+underneath them. Engineering Manager (contract) at Parler Cloud Technologies, and owner of
+PRISM USA LLC, where I design, ship, and operate the company's products and hosting. U.S.
+Army combat veteran.
 
+TECHNICAL SKILLS
+Languages: Go, Python, SQL, TypeScript, JavaScript, Lua, Bash
+Backend: REST APIs, Stripe, JWT/JWKS, OAuth/OIDC, background processing, webhooks
+Data: PostgreSQL, Redis, Kafka, Elasticsearch/OpenSearch, ClickHouse, MariaDB
+Infrastructure: Docker, Kubernetes, nginx, Cloudflare, Linux, Terraform, Salt, GitHub
+  Actions, Control Plane, Triton
+Observability: Prometheus, Grafana, VictoriaMetrics, Sentry
+Frontend: React, React Native, Vue
+AI development: Claude, Codex, Cursor, ChatGPT; LLM, speech-to-text, and text-to-speech APIs
 
-SKILLS
-------
-Languages & frameworks:  Go, Python, Bash, PHP (Laravel), C++ (maintenance and tooling)
-Data & caching:        PostgreSQL (migrations, indexing, read/write routing via PgDog/PgCat),
-                       Redis (queues, scan-safe cache ops), OpenSearch (Elasticsearch-compatible search)
-Media & APIs:          FFmpeg video processing, REST/JSON APIs, proxy routes, session and analytics event pipelines
-Platform:              Linux, Docker / Docker Compose, nginx, Salt, observability (Grafana, VictoriaMetrics, Sentry),
-                       runbooks and backups
-Security background:   WAF/modsecurity ecosystem, load and abuse testing, hardening multi-tenant services
+PROFESSIONAL EXPERIENCE
 
+Engineering Manager (Contract) | Parler Cloud Technologies LLC
+February 2025 - Present
+Remote / Kokomo, IN
+- Built Go APIs for Stripe Premium subscriptions and creator memberships, including durable
+  checkout state, idempotent payment requests, and webhook recovery.
+- Implemented identity-provider token exchange and account linking for Parler and PlayTV,
+  including JWT signature, issuer, and audience validation with JWKS caching.
+- Centralized tenant-aware authorization for private accounts across posts, comments,
+  stories, search, and trending.
+- Migrated email and SMS workflows from Laravel to Go background workers, with tenant-
+  specific templates and Mailgun/SMTP delivery.
+- Reworked a PostgreSQL onboarding migration to avoid updating approximately 15 million
+  account rows while preserving activation behavior.
+- Instrumented Go APIs with Prometheus and Sentry to track errors and route latency,
+  distinguishing native Go requests from proxied Laravel traffic.
+- Built an audited PostgreSQL command-line tool with read-only credential isolation,
+  transaction controls, query timeouts, and JSON/CSV output.
+- Developed shared React and React Native features, including community chat with reconnect
+  recovery and Premium administration tools.
+- Used AI-assisted workflows to plan and implement features, debug issues, and write
+  regression tests, with code review, linting, and build verification.
 
-EXPERIENCE
-----------
+Owner and Engineer | PRISM USA LLC
+July 2024 - Present
+Kokomo, IN | raymond@prsmusa.com | prsmusa.com
+- Built and operate an AI phone receptionist for small businesses that screens and qualifies
+  callers, books call-backs, and transfers live calls (Python, SignalWire, cloud speech and
+  LLM services).
+- Designed the call path so calls never depend on the database: settings are cached with an
+  on-disk snapshot and call records go through a local outbox, so a database outage cannot
+  drop a call.
+- Built the customer dashboard (React, TypeScript, FastAPI, PostgreSQL) with Google sign-in,
+  role-based access, and an audit trail.
+- Run the company's services: project management (Kaneo), a Go Bible reader API with
+  OpenSearch full-text search, a help desk, a paste service, and Grafana/VictoriaMetrics
+  monitoring with alerting.
+- Migrated every service from an on-premises server and VPS reverse-tunnel edge to a cloud
+  platform behind Cloudflare and a load balancer, with nginx as the single front door and
+  private-network backends; verified zero data loss table by table and kept a tested
+  rollback path, a scripted disaster-recovery rebuild, and nightly backups.
 
-Sovren Technologies — Engineering Manager (Parler / PlayTV · social-api)
-2025 – Present | Remote
-Team profile: https://www.parler.com/about/team
+Software Engineer | Edgecast / Edgio (formerly Verizon Media / Yahoo)
+March 2016 - December 2024
+- Created a distributed Kafka ingestion and enrichment system in Go processing approximately
+  10 million messages per second.
+- Developed customer-facing Go and Python APIs and implemented JWT authentication with an
+  OpenResty/Nginx proxy using Lua.
+- Built distributed Elasticsearch and ClickHouse clusters totaling approximately 200 servers
+  to support customer-facing dashboards.
+- Improved configuration delivery using Redis for real-time updates and batching to increase
+  throughput.
+- Provisioned and managed more than 100 servers with Salt and Kubernetes; implemented
+  monitoring with Prometheus, Grafana, and Slack webhooks.
 
-Engineering manager on the Parler social platform within the Sovren product
-ecosystem. Hands-on leader on the Go + Laravel backend shared by web and mobile
-clients—architecture through implementation, including 250+ commits on the
-monorepo, production fixes, and platform documentation.
+Network Operations (NOC) Engineer | Verizon Digital Media Services / Edgecast
+April 2015 - March 2016
+- Automated global issue scans and reporting, reducing issue-detection time from one hour to
+  10 minutes.
+- Diagnosed production server and application issues, gathered root-cause evidence, and
+  coordinated escalation to engineering teams.
 
-  • Built and merged Play ↔ Pay SSO: IDP proxy routes in Go and Laravel, token
-    exchange, and cross-app login wiring for Parler properties.
-  • Improved feeds and discovery (query simplification, banned/deleted account
-    contracts, performance-oriented SQL).
-  • Delivered server-side video trimming with FFmpeg (stream copy, S3 key edge
-    cases, validation and test coverage).
-  • Led PostgreSQL scale work: read/write separation, PgCat to PgDog migration,
-    trigram indexes for search-like queries, Laravel test/connection compatibility.
-  • Shipped ads click tracking, self-block safeguards, linked-accounts API proxy,
-    and session-end event streaming for analytics.
-  • Authored event pipeline and local-dev runbooks (analytics validation,
-    deployment troubleshooting, onboarding docs).
-  • Maintained production hygiene: Redis SCAN vs KEYS, queue worker layout,
-    scheduled job/Sentry naming, environment config for staged rollouts.
-
-
-Edgecast — Software engineer, cloud security
-~2016 – 2025 | Los Angeles area / remote
-
-Security and edge-delivery organization (Verizon Digital Media Services). Built
-and operated infrastructure for security products used at CDN scale.
-
-  • Developed and operated security application infrastructure (APIs, automation,
-    distributed deployments) in Python, Go, and Bash on Linux.
-  • Contributed to open-source WAF work (waflz) and related edge-security tooling.
-    https://github.com/VerizonDigital/waflz
-  • Supported Salt, load testing, and incident-style troubleshooting for globally
-    distributed services.
-  • Known internally for deep debugging, documentation, and pairing across QA and
-    application teams.
-
-
-PRSMUSA — Personal platform & products (https://prsmusa.com)
-Ongoing | Owner, full-stack engineer
-
-Self-hosted product lab and public-facing services documented in infra-docs
-(https://github.com/R4wm/infra-docs). Full stack runs in Docker Compose on a home
-backend (baser4wm); a small VPS terminates TLS with nginx and reverse-proxies
-outbound reverse-SSH tunnels so nothing on the home network needs inbound ports.
-NAS + Restic handle off-site backups; Grafana/VictoriaMetrics watch container and
-host health.
-
-Applications (each with its own compose stack):
-
-  • Bible API — reader/API backend with Redis and OpenSearch (Elasticsearch-compatible
-    search + dashboards); public routes under /bible/
-    https://github.com/R4wm/bible_api
-  • Auto Specs — engine build specification tool (FastAPI + Vite frontend, PostgreSQL);
-    API and UI published under /auto_specs/
-    https://github.com/R4wm/auto_specs
-  • PRSM Support — production osTicket helpdesk (MariaDB, isolated restore/testing);
-    /ticket/ with scripted backup/restore runbooks
-    https://github.com/R4wm/osTicket
-  • PRSM Work (Kaneo) — self-hosted project/work management (PostgreSQL, Silo storage);
-    deployed from versioned compose in infra-docs with verified backup jobs
-  • Haul marketplace API — MVP broker API (product monorepo), exposed at
-    https://prsmusa.com/haul/v1/
-  • Metrics platform — Grafana, VictoriaMetrics, Alloy, OpenTelemetry collector,
-    vmalert/Alertmanager; Docker label-based scraping; dashboard at /metrics/
-    https://github.com/R4wm/metrics
-  • PrivateBin — zero-knowledge paste bin at /paste/
-  • baser4wm-ollama — local Ollama + Qwen JSON agent on the same host (GPU-backed
-    experimentation, not public)
-    https://github.com/R4wm/baser4wm-ollama
-
-Ops & tooling: inventory diagrams, bootstrap/runbooks, SOPS-style secrets boundaries,
-tunnel systemd/cron launchers (baser4wm-tunnel), and nginx configs versioned beside
-the docs. https://github.com/R4wm/baser4wm-tunnel
-
-
-U.S. Army — Sergeant / combat engineer
-Two combat tours (Kosovo, Iraq) | California Army National Guard (OIF-8 & OEF)
-
-  • Served as Sergeant and combat engineer (see Sovren team bio at
-    https://www.parler.com/about/team).
-
+Software Engineer / Network Engineer | STG Logistics
+March 2014 - December 2014
+- Maintained legacy SCO Unix systems and improved network and systems security.
+- Built Java reporting applications for weekly customer updates on issues and resolutions.
 
 EDUCATION
----------
-Westwood College–Anaheim — Bachelor of Science, Computer Network Management
-2010 – 2014
+Westwood College (Anaheim)
+Bachelor of Science in Information Technology
+Major in Computer Network Management | Cum Laude | Alpha Beta Kappa | May 2014
 
-  • Cum Laude; Alpha Beta Kappa National Honor Society
-  • Competed in Western Regional Collegiate Cyber Defense Competition (WRCCDC) blue team
-
-
-CERTIFICATIONS, HONORS & SPEAKING
----------------------------------
-  • CCNA — Cisco (issued 2012)
-  • SoCal Code Camp speaker (2016) — regional load testing with beeswithmachineguns and Hurl
-  • WRCCDC blue team member (2012)
+MILITARY SERVICE
+U.S. Army National Guard
+Sergeant (E-5), Combat Engineer
+Combat veteran; Operation Iraqi Freedom deployment, Kuwait/Iraq, 2008-2009.
