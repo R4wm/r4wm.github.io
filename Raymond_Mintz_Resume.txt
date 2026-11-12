@@ -5,10 +5,8 @@ https://prsmusa.com | https://r4wm.github.io | https://github.com/R4wm | https:/
 
 SUMMARY
 Software engineer who builds and runs production systems end to end: Go and Python services,
-PostgreSQL data models, subscription billing and authentication, and the infrastructure
-underneath them. Engineering Manager (contract) at Parler Cloud Technologies, and owner of
-PRISM USA LLC, where I design, ship, and operate the company's products and hosting. U.S.
-Army combat veteran.
+PostgreSQL, billing and authentication, and the infrastructure underneath them. Owner of
+PRISM USA LLC. U.S. Army combat veteran.
 
 TECHNICAL SKILLS
 Languages: Go, Python, SQL, TypeScript, JavaScript, Lua, Bash
@@ -22,9 +20,10 @@ AI development: Claude, Codex, Cursor, ChatGPT; LLM, speech-to-text, and text-to
 
 PROFESSIONAL EXPERIENCE
 
-Engineering Manager (Contract) | Parler Cloud Technologies LLC
-February 2025 - Present
-Remote / Kokomo, IN
+Software Engineer (Contract) | Sovren Technologies, Inc., through PRISM USA LLC
+September 2026 - Present
+Parler / PlayTV | Remote / Kokomo, IN
+Engineering Manager | Parler Cloud Technologies LLC | February 2025 - September 2026
 - Built Go APIs for Stripe Premium subscriptions and creator memberships, including durable
   checkout state, idempotent payment requests, and webhook recovery.
 - Implemented identity-provider token exchange and account linking for Parler and PlayTV,
@@ -41,8 +40,6 @@ Remote / Kokomo, IN
   transaction controls, query timeouts, and JSON/CSV output.
 - Developed shared React and React Native features, including community chat with reconnect
   recovery and Premium administration tools.
-- Used AI-assisted workflows to plan and implement features, debug issues, and write
-  regression tests, with code review, linting, and build verification.
 
 Owner and Engineer | PRISM USA LLC
 July 2024 - Present

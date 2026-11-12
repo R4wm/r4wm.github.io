@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Raymond Mintz | Software Engineer</title>
+  <meta name="description" content="Raymond Mintz, software engineer in Kokomo, Indiana. Go, Python and PostgreSQL services, billing and authentication, and the infrastructure underneath them. Owner of PRISM USA LLC.">
+  <meta property="og:title" content="Raymond Mintz | Software Engineer">
+  <meta property="og:description" content="I build and run production systems end to end.">
+  <meta property="og:url" content="https://r4wm.github.io/">
+  <link rel="canonical" href="https://r4wm.github.io/">
+  <link rel="stylesheet" href="/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap">
+      <a class="site-name" href="/">Raymond Mintz</a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="#work">Work</a>
+        <a href="/resume/">Resume</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <p class="eyebrow">Software engineer · Kokomo, Indiana</p>
+      <h1>I build and run production systems end to end.</h1>
+      <p class="lede">Go, Python and PostgreSQL services, subscription billing and authentication, and the infrastructure underneath them. Owner of PRISM USA LLC. U.S. Army combat veteran.</p>
+      <div class="actions">
+        <a class="button primary" href="/resume/">Read my resume</a>
+        <a class="button" href="/Raymond_Mintz_Resume.pdf">Download PDF</a>
+      </div>
+    </section>
+
+    <section aria-labelledby="now">
+      <p class="eyebrow">Now</p>
+      <h2 id="now">What I'm working on</h2>
+      <div class="roles">
+        <article class="role">
+          <span class="dates">Sep 2026 – present</span>
+          <h3>Software Engineer (contract), Sovren Technologies</h3>
+          <p>Backend and app work on the Parler and PlayTV platforms: subscriptions and billing, identity and account linking, authorization, and background workers. Before the contract I was Engineering Manager at Parler Cloud Technologies (Feb 2025 – Sep 2026).</p>
+        </article>
+        <article class="role">
+          <span class="dates">Jul 2024 – present</span>
+          <h3>Owner and engineer, PRISM USA LLC</h3>
+          <p>I design, ship and operate the company's products and hosting at <a href="https://prsmusa.com">prsmusa.com</a>, starting with an AI phone receptionist for small businesses.</p>
+        </article>
+      </div>
+    </section>
+
+    <section aria-labelledby="work">
+      <p class="eyebrow">Selected work</p>
+      <h2 id="work">Things I've built</h2>
+      <ul class="work">
+        <li>
+          <span class="where">PRISM USA LLC</span>
+          <div class="what">
+            <h3>AI phone receptionist</h3>
+            <p>Answers small-business calls, screens and qualifies callers, books call-backs and transfers live calls. Calls never depend on the database: settings are cached on disk and call records go through a local outbox, so an outage can't drop a call. Comes with a customer dashboard with Google sign-in and an audit trail.</p>
+            <div class="tags"><span>Python</span><span>SignalWire</span><span>LLM · STT · TTS</span><span>FastAPI</span><span>React</span><span>PostgreSQL</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">PRISM USA LLC</span>
+          <div class="what">
+            <h3>Moving every service to the cloud</h3>
+            <p>Moved the company's sites and apps from a home server behind VPS tunnels to Triton, behind Cloudflare, a load balancer and nginx, with backends on a private network. Every database was checked table by table and every file store byte by byte: zero data loss, a tested rollback, a scripted disaster-recovery rebuild and nightly backups.</p>
+            <div class="tags"><span>nginx</span><span>Docker</span><span>Cloudflare</span><span>Triton</span><span>PostgreSQL</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">Parler / PlayTV</span>
+          <div class="what">
+            <h3>Subscriptions, payments and sign-in</h3>
+            <p>Go APIs for Stripe Premium subscriptions and creator memberships with durable checkout state, idempotent payments and webhook recovery, plus identity-provider token exchange and account linking with JWT/JWKS validation.</p>
+            <div class="tags"><span>Go</span><span>Stripe</span><span>JWT/JWKS</span><span>PostgreSQL</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">PRISM USA LLC</span>
+          <div class="what">
+            <h3><a href="https://prsmusa.com/bible/v2">Bible reader API</a></h3>
+            <p>A Go API and reader with full-text search over the King James Version, built on OpenSearch with synonym handling, Redis and PostgreSQL.</p>
+            <div class="tags"><span>Go</span><span>OpenSearch</span><span>Redis</span></div>
+          </div>
+        </li>
+        <li>
+          <span class="where">Edgecast / Edgio</span>
+          <div class="what">
+            <h3>Streaming data at CDN scale</h3>
+            <p>A distributed Kafka ingestion and enrichment system in Go handling about 10 million messages per second, feeding Elasticsearch and ClickHouse clusters of roughly 200 servers behind customer dashboards.</p>
+            <div class="tags"><span>Go</span><span>Kafka</span><span>ClickHouse</span><span>Elasticsearch</span></div>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="background">
+      <p class="eyebrow">Background</p>
+      <h2 id="background">Where I've been</h2>
+      <dl class="timeline">
+        <dt>2026 – present</dt><dd>Software Engineer (contract), Sovren Technologies, through PRISM USA LLC</dd>
+        <dt>2025 – 2026</dt><dd>Engineering Manager, Parler Cloud Technologies</dd>
+        <dt>2024 – present</dt><dd>Owner and engineer, PRISM USA LLC</dd>
+        <dt>2016 – 2024</dt><dd>Software Engineer, Edgecast / Edgio (formerly Verizon Media / Yahoo)</dd>
+        <dt>2015 – 2016</dt><dd>Network Operations Engineer, Verizon Digital Media Services / Edgecast</dd>
+        <dt>2014</dt><dd>B.S. Information Technology, Westwood College (Anaheim), cum laude</dd>
+        <dt>2008 – 2009</dt><dd>U.S. Army National Guard, Sergeant (E-5), Combat Engineer; Operation Iraqi Freedom</dd>
+        <dt>Speaking</dt><dd>SoCal Code Camp 2016: multi-region load testing with Python and AWS EC2</dd>
+      </dl>
+    </section>
+
+    <section aria-labelledby="contact">
+      <p class="eyebrow">Contact</p>
+      <h2 id="contact">Get in touch</h2>
+      <ul class="contact-list">
+        <li><span>Email</span><a href="mailto:raymondmintz11@gmail.com">raymondmintz11@gmail.com</a></li>
+        <li><span>Business</span><a href="mailto:raymond@prsmusa.com">raymond@prsmusa.com</a></li>
+        <li><span>GitHub</span><a href="https://github.com/R4wm">github.com/R4wm</a></li>
+        <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/mintzraymond">linkedin.com/in/mintzraymond</a></li>
+        <li><span>Company</span><a href="https://prsmusa.com">prsmusa.com</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">Raymond Mintz · Kokomo, Indiana</div>
+  </footer>
+</body>
+</html>
