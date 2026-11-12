@@ -9,7 +9,7 @@ services, PostgreSQL, billing and authentication, and cloud networking down to t
 driver. Owner of PRISM USA LLC. U.S. Army combat veteran.
 
 TECHNICAL SKILLS
-Languages: Go, Rust, Python, SQL, TypeScript, JavaScript, Lua, Bash
+Languages: Go, Rust, Python, C++, SQL, TypeScript, JavaScript, Lua, Bash
 Backend: REST APIs, Stripe, JWT/JWKS, OAuth/OIDC, background processing, webhooks
 Data: PostgreSQL, Redis, Kafka, Elasticsearch/OpenSearch, ClickHouse, MariaDB
 Infrastructure: Docker, Kubernetes, nginx, Cloudflare, Linux, Terraform, Salt, GitHub
@@ -67,12 +67,15 @@ Kokomo, IN | raymond@prsmusa.com | prsmusa.com
 
 Software Engineer | Edgecast / Edgio (formerly Verizon Media / Yahoo)
 March 2016 - December 2024
+- Worked day to day with the Security Core (SecC) team on the WAF products; contributed to
+  waflz, the open-source multitenant ModSecurity-compatible WAF engine (C++): audit mode,
+  bot fast path, account types and tiering, and a memory-leak fix.
 - Created a distributed Kafka ingestion and enrichment system in Go processing approximately
   10 million messages per second.
-- Developed customer-facing Go and Python APIs and implemented JWT authentication with an
-  OpenResty/Nginx proxy using Lua.
-- Built distributed Elasticsearch and ClickHouse clusters totaling approximately 200 servers
-  to support customer-facing dashboards.
+- Developed customer-facing Go and Python APIs, with JWT authentication in an
+  OpenResty/Nginx Lua proxy.
+- Built Elasticsearch and ClickHouse clusters of about 200 servers behind customer-facing
+  dashboards.
 - Improved configuration delivery with Redis real-time updates and batching; provisioned and
   managed more than 100 servers with Salt and Kubernetes, monitored with Prometheus and
   Grafana.
@@ -94,7 +97,7 @@ Cum Laude | Alpha Beta Kappa | May 2014
 
 MILITARY SERVICE
 U.S. Army National Guard (California)
-Sergeant (E-5), Combat Engineer (21B) | Honorable discharge
-Deployed to Kosovo (NATO KFOR) and Kuwait/Iraq (Operation Iraqi Freedom, September 2008 -
-July 2009). Army Commendation Medal, Army Achievement Medal, Iraq Campaign Medal with
-campaign star, Kosovo Campaign Medal, NATO Medal.
+Sergeant (E-5), Combat Engineer (21B) | 2003 - 2011 | Honorable discharge
+Deployed to Kosovo (NATO KFOR) and Kuwait/Iraq (Operation Iraqi Freedom, Sep 2008 - Jul
+2009). Army Commendation Medal, Army Achievement Medal, Iraq Campaign Medal with campaign
+star, NATO Medal.
